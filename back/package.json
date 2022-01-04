@@ -1,0 +1,72 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.1",
+    "bootstrap": "^4.4.1",
+    "concurrently": "^6.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-cookie": "^1.0.0",
+    "koa-mount": "^4.0.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "koa-static-server": "^1.5.2",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.6",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "node-sass": "^4.13.1",
+    "nodemailer": "^6.6.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "socket.io": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "client": "node src",
+    "server": "nodemon --watch src/ -r esm src/index.js",
+    "start:dev": "concurrently \"npm run server\" \"npm run client --prefix ../frontend\"",
+    "start-client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "yarn build && node server/index.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
