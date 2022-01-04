@@ -1,0 +1,1 @@
+export const REG_EMAIL="REG_EMAIL"

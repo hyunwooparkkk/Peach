@@ -1,0 +1,100 @@
+/* 
+주아 
+font-family: 'Jua', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+button {
+    outline: none;
+    cursor: pointer;
+    border: 0;
+}
+
+.nomodal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.modalContainer {
+    width: 90%;
+    max-width: 450px;
+    margin:0 auto;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+    background-color: #fff;
+    animation: modal-show .3s;
+    overflow: hidden;
+    border: 2px solid #FFC5C7;
+}
+
+.modalTop {
+    position: relative;
+    padding: 16px 64px 16px 16px;
+    background-color: #FFC5C7;
+    font-weight: 700;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 30px;
+    font-family: 'Jua', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #E41549;
+    background-color: transparent;
+}
+
+.modalMiddle {
+    padding: 16px;
+}
+
+.modalBttom {
+    padding: 12px 16px;
+    text-align: right;
+}
+
+.sendImage {
+    padding: 6px 12px;
+    color: #fff;
+    background-color: #FFC5C7;
+    border-radius: 5px;
+    font-family: 'Jua', sans-serif;
+    font-size: 20px;
+}
+.sendImage:hover, .close:hover {
+    color: #E41549;
+}
+
+.imageMessage {
+    color: #413d3e;
+    font-family: 'Jua', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@keyframes modal-show {
+    from {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@keyframes modal-bg-show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,167 @@
+/* 
+도현 
+font-family: 'Do Hyeon', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+/* 
+주아 
+font-family: 'Jua', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+/* 
+Gothic A1
+font-family: 'Gothic A1', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght&display=swap');
+
+.chatContainer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.chatRoomName {
+    color: #FFC5C7;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Jua', sans-serif;
+    font-size: 150%; 
+}
+
+.messageContainer {
+    flex: 1;
+    min-height: 100px;
+    overflow: auto;
+    border: 1px solid none;
+    border-radius: 7px 7px 0 0;
+}
+
+.messageList {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Jua', sans-serif;
+    font-weight: 500;
+    overflow: "scroll";
+    width: 100%;
+}
+
+.textArea {
+    height: 60px;
+    max-height: 50%;
+    border: 1px solid #8b8587;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+::placeholder {
+    color: #8b8587;
+    font-size: 120%;
+    font-family: 'Jua', sans-serif;
+}
+
+.textMessage {
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    max-height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    resize: none;
+    border: none;
+    font-family: 'Jua', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.noticeInputChat {
+    padding: .5rem;
+    font-family: 'Jua', sans-serif;
+    font-weight: 500;
+    color: #8b8587;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.messageItem {
+    width: 55%;
+    margin: 5px;
+    padding: 12px 8px;
+    word-break: break-word;
+    border-radius: 4px;
+    color: #8b8587;
+    font-family: 'Jua', sans-serif;
+    font-weight: 500;
+}
+
+.sentId {
+    margin-top: 15px;
+    margin-left: auto; 
+    text-align: right;
+    padding: 10px 5px 0 0;
+    width: 90%;
+}
+.sentMessage {
+    background-color: #FFC5C7;
+    float: right;
+    text-align: right;
+}
+.sentDate {
+    display: inline-block;
+    width: 35%;
+    text-align: right;
+    margin-left: 10px;
+    padding-top: 0;
+}
+
+.receivedId {
+    margin-top: 15px;
+    margin-right: auto;
+    text-align: left;
+    padding: 10px 0 0 5px;
+    width: 90%;
+}
+.receivedMessage {
+    background-color: #8b8587;
+    color: #fff;
+    float: left;
+    text-align: left;
+}
+.receivedDate {
+    display: inline-block;
+    width: 35%;
+    text-align: left;
+    padding-top: 0;
+}
+
+.imageItem {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.upload {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.sendMessage {
+    background: #ffc5c700;
+    border-radius: 50px;
+}
+
+.sendButton {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.messageContainer, .textMessage, .sendMessage {
+    border-color: #9a9a9a;
+}
